@@ -1,0 +1,330 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-family: "LatoRegular";
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  line-height: 1;
+  
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.clearfix {
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+}
+}
+
+h1 {
+    font-size: 41px;
+}
+h2 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 31px;;
+}
+
+@font-face {
+            font-family: "LatoRegular";
+            src: url("../fonts/LatoRegular/LatoRegular.eot");
+            src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
+            url("../fonts/LatoRegular/LatoRegular.woff") format("woff"),
+            url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+            font-style: normal;
+            font-weight: normal;
+    }
+
+    @font-face {
+            font-family: "LatoBold";
+            src: url("../fonts/LatoBold/LatoBold.eot");
+            src: url("../fonts/LatoBold/LatoBold.eot?#iefix")format("embedded-opentype"),
+            url("../fonts/LatoBold/LatoBold.woff") format("woff"),
+            url("../fonts/LatoBold/LatoBold.ttf") format("truetype");
+            font-style: normal;
+            font-weight: normal;
+    }
+
+    @font-face {
+            font-family: "LatoItalic";
+            src: url("../fonts/LatoItalic/LatoItalic.eot");
+            src: url("../fonts/LatoItalic/LatoItalic.eot?#iefix")format("embedded-opentype"),
+            url("../fonts/LatoItalic/LatoItalic.woff") format("woff"),
+            url("../fonts/LatoItalic/LatoItalic.ttf") format("truetype");
+            font-style: normal;
+            font-weight: normal;
+    }
+
+    @font-face {
+            font-family: "LatoLight";
+            src: url("../fonts/LatoLight/LatoLight.eot");
+            src: url("../fonts/LatoLight/LatoLight.eot?#iefix")format("embedded-opentype"),
+            url("../fonts/LatoLight/LatoLight.woff") format("woff"),
+            url("../fonts/LatoLight/LatoLight.ttf") format("truetype");
+            font-style: normal;
+            font-weight: normal;
+    }
+
+    @font-face {
+            font-family: "LatoBoldItalic";
+            src: url("../fonts/LatoBoldItalic/LatoBoldItalic.eot");
+            src: url("../fonts/LatoBoldItalic/LatoBoldItalic.eot?#iefix")format("embedded-opentype"),
+            url("../fonts/LatoBoldItalic/LatoBoldItalic.woff") format("woff"),
+            url("../fonts/LatoBoldItalic/LatoBoldItalic.ttf") format("truetype");
+            font-style: normal;
+            font-weight: normal;
+    }
+
+    @font-face {
+            font-family: "LatoLightItalic";
+            src: url("../fonts/LatoLightItalic/LatoLightItalic.eot");
+            src: url("../fonts/LatoLightItalic/LatoLightItalic.eot?#iefix")format("embedded-opentype"),
+            url("../fonts/LatoLightItalic/LatoLightItalic.woff") format("woff"),
+            url("../fonts/LatoLightItalic/LatoLightItalic.ttf") format("truetype");
+            font-style: normal;
+            font-weight: normal;
+    }
+
+@font-face { 
+  font-family: 'Montserrat-Bold'; 
+  src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/Montserrat-Bold.woff') format('woff'), 
+  url('../fonts/Montserrat-Bold.ttf') format('truetype'), 
+  url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg'); 
+  font-weight: normal; font-style: normal; 
+}
+
+@font-face { 
+  font-family: 'Montserrat-Regular'; 
+  src: url('../fontss/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), 
+  url('../fontss/Montserrat-Regular.woff') format('woff'), 
+  url('../fontss/Montserrat-Regular.ttf') format('truetype'), 
+  url('../fontss/Montserrat-Regular.svg#Montserrat-Regular') format('svg'); 
+  font-weight: normal; font-style: normal; 
+}
+
+@font-face {
+   font-family: 'Merriweather-Regular';
+   src: url('../fonts/Merriweather-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url('../fonts/Raleway-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.head {
+    position: relative;
+  background-image: url("../image/basic_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_top {
+  display: inline-block;
+  width: 116px;
+  height: 22px;
+  background-image: url("../image/logo.png");
+  background-repeat: no-repeat;
+}
+
+.navbar-toggle {
+  background-color: #FFF;
+
+}
+
+.menu_top { 
+    ul { 
+        display: flex;
+        justify-content: space-between; 
+    } 
+}
+
+.menu_top {
+    li {
+        display: inline-block;
+        }
+}
+
+.block_info {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+
+}
+
+.title_info {
+    width: 35%;
+    margin: 0 auto;
+
+    a {
+        display: inline-block;
+        text-align: center;
+    }
+    p {
+        margin-top: 15px;
+    }
+}
+
+.download {
+    margin: 0 auto;
+    margin-top: 75px;
+    padding: 15px 30px;
+    text-align: center;
+    border: 1px solid;
+    margin-bottom: 25px;
+    &:hover {
+        cursor: pointer;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        border: 1px solid transparent;
+    }
+}
+
+.store {
+    position: relative;
+    top: -200px;
+    background-image: url("../image/rectangle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 556px;
+    padding: 100px 0;
+}
+
+.navbar-collapse {
+    box-shadow: none;
+    border: 0;
+}
+
+.app_title {
+    text-align: center;
+    color: white;
+    margin: 80px 0;
+    h3 {
+        margin-bottom: 20px;
+        font-size: 47px;
+    }
+}
+
+.wrap_download {
+    text-align: center;
+}
+
+.wrap_link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a {
+        display: inline-flex;
+        align-items: center;
+        transition: 2s ease-out background-color;
+        transition: 4s ease-out color;
+        border: 1px solid white;
+        padding: 15px 25px;
+
+        &::before {
+            content: '';
+            margin-right: 5px;
+            width: 20px;
+            height: 20px;
+            background-image: url('../image/ios.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        &:hover {
+            color: black;
+            background-color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.some_featured {
+    background-color: #fff;
+}
+
+.content_wrap {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.wrap_basicskill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle_item {
+    border: 1px solid #007ecf;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .menu_top { 
+        ul { 
+            display: block;
+        }
+    }
+
+    .menu_top {
+        width: 50%;
+        li {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .title_info {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .block_info {
+        flex-direction: column;
+    }
+}
+
+
